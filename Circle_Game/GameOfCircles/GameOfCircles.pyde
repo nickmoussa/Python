@@ -2,6 +2,7 @@ import platform
 from Bullet import Bullet
 from Enemy import Enemy
 from Player import Player
+from RainDrop import RainDrop
 from SpriteManager import sprites
 
 def setup():
@@ -16,6 +17,16 @@ def setup():
     sprites.append(player)
     sprites.append(Enemy(50, 50, enemyTeam))
     sprites.append(Enemy(150, 150, enemyTeam))
+    sprites.append(RainDrop(70, 70, enemyTeam))
+    sprites.append(RainDrop(90, 80, enemyTeam))
+    sprites.append(RainDrop(110, 90, enemyTeam))
+    sprites.append(RainDrop(340, 100, enemyTeam))
+    sprites.append(RainDrop(290, 110, enemyTeam))
+    sprites.append(RainDrop(300, 120, enemyTeam))
+    sprites.append(RainDrop(190, 130, enemyTeam))
+    sprites.append(RainDrop(210, 140, enemyTeam))
+    sprites.append(RainDrop(230, 60, enemyTeam))
+    sprites.append(RainDrop(250, 40, enemyTeam))
                            
 def draw():
     global player, sprites
