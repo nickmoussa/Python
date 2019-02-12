@@ -4,6 +4,8 @@ from Enemy import Enemy
 from Player import Player
 from RainDrop import RainDrop
 from SpriteManager import sprites
+from JiggleBot import JiggleBot
+from ScreenSaverBot import ScreenSaverBot
 
 def setup():
     print "Built with Processing Python version " + platform.python_version()
@@ -16,17 +18,19 @@ def setup():
     
     sprites.append(player)
     sprites.append(Enemy(50, 50, enemyTeam))
-    sprites.append(Enemy(150, 150, enemyTeam))
+    sprites.append(Enemy(70, 150, enemyTeam))
     sprites.append(RainDrop(70, 70, enemyTeam))
     sprites.append(RainDrop(90, 80, enemyTeam))
-    sprites.append(RainDrop(110, 90, enemyTeam))
+    sprites.append(RainDrop(400, 90, enemyTeam))
     sprites.append(RainDrop(340, 100, enemyTeam))
-    sprites.append(RainDrop(290, 110, enemyTeam))
-    sprites.append(RainDrop(300, 120, enemyTeam))
-    sprites.append(RainDrop(190, 130, enemyTeam))
-    sprites.append(RainDrop(210, 140, enemyTeam))
-    sprites.append(RainDrop(230, 60, enemyTeam))
-    sprites.append(RainDrop(250, 40, enemyTeam))
+    sprites.append(RainDrop(390, 110, enemyTeam))
+    sprites.append(RainDrop(400, 120, enemyTeam))
+    sprites.append(RainDrop(380, 130, enemyTeam))
+    sprites.append(RainDrop(370, 200, enemyTeam))
+    sprites.append(RainDrop(330, 60, enemyTeam))
+    sprites.append(RainDrop(350, 40, enemyTeam))
+    sprites.append(JiggleBot(100, 100, enemyTeam))
+    sprites.append(ScreenSaverBot(100, 100, enemyTeam))
                            
 def draw():
     global player, sprites
