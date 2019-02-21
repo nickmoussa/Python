@@ -1,6 +1,6 @@
 class RainDrop:
     
-    speed = 8
+    speed = 5
     diameter = 50
     c = color(0,0,255)
     
