@@ -1,4 +1,6 @@
-class Enemy:
+from Sprite import Sprite
+
+class Enemy(Sprite):
     
     speed = 8
     diameter = 50
@@ -14,10 +16,4 @@ class Enemy:
         if self.x < 0 or self.x > width:
             self.speed *= -1
         
-    def display(self):
-        fill(self.c)
-        ellipse(self.x, self.y, self.diameter, self.diameter)
-        
-    def animate(self):
-        self.move()
-        self.display()
+    
