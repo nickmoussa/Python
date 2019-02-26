@@ -18,6 +18,7 @@ def setup():
     player = Player(width/2, height/2, playerTeam)
     SpriteManager.setPlayer(player)
     SpriteManager.spawn(JiggleBot(200, 50, 2))
+    SpriteManager.spawn(ScreenSaverBot(100, 50, 2))
     
                            
 def draw():
