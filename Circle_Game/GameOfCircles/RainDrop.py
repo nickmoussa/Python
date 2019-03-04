@@ -1,5 +1,5 @@
 from Sprite import Sprite
-
+from Bullet import Bullet
 class RainDrop(Sprite):
     
     speed = 5

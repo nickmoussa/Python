@@ -1,8 +1,8 @@
 from Sprite import Sprite
-
+from Bullet import Bullet
 class ScreenSaverBot(Sprite):
     
-    xspeed = 8
+    xspeed = 6
     yspeed = 4
     diameter = 50
     c = color(0,150,100)
