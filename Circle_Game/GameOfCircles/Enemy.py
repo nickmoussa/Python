@@ -23,3 +23,5 @@ class Enemy(Sprite):
         
     def fire(self, vector):
         SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
+        
+               
