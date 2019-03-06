@@ -10,7 +10,7 @@ class Enemy(Sprite):
     diameter = 50
     c = color(0, 0, 255)
     mark = 0
-    wait = 1000
+    wait = 2000
     go = True
 
 
@@ -26,8 +26,8 @@ class Enemy(Sprite):
         d = ((self.x - target.x)**2 + (self.y - target.y)**2)**.5
         xComp = target.x - self.x
         yComp = target.y - self.y
-        xVec = xComp/2 * .1
-        yVec = yComp/2 * .1
+        xVec = xComp/2 * .07
+        yVec = yComp/2 * .07
         return PVector(xVec, yVec)
     
     def fire(self, vector):
