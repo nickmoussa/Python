@@ -22,6 +22,7 @@ def setup():
     SpriteManager.spawn(RainDrop(100, 60, 2))
     SpriteManager.spawn(RainDrop(350, 60, 2))
     SpriteManager.spawn(Enemy(100, 100, 2))
+    SpriteManager.spawn(Enemy(200, 100, 2))
     
                            
 def draw():
