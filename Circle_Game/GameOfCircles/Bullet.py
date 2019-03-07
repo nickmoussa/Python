@@ -22,11 +22,4 @@ class Bullet(Sprite):
         or self.y < 0 - self.diameter):
             SpriteManager.destroy(self)
         
-    def display(self):
-        fill(self.c)
-        ellipse(self.x, self.y, self.diameter, self.diameter)
-        
-    def animate(self):
-        self.move()
-        self.display()  
         
