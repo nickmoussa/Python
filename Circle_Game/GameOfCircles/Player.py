@@ -28,7 +28,6 @@ class Player(Sprite):
         self.x = constrain(self.x, self.diameter / 2, width - self.diameter / 2)
         self.y = constrain(self.y, self.diameter / 2, height - self.diameter / 2)
     
-
     def keyDown(self):
         if key == 'f' or key == 'F':
             SpriteManager.spawn(Bullet(self.x, self.y, PVector(0, -10), self.team))

@@ -13,7 +13,6 @@ class Enemy(Sprite):
     wait = 2000
     go = True
 
-
     def move(self):
         self.x += self.speed
         if self.x < 0 or self.x > width:
