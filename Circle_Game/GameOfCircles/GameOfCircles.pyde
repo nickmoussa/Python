@@ -8,11 +8,12 @@ from RainDrop import RainDrop
 from JiggleBot import JiggleBot
 from ScreenSaverBot import ScreenSaverBot
 from Bullet import Bullet
+from ArmoredShooter import ArmoredShooter
 
 def setup():
     print "Built with Processing Python version " + platform.python_version()
     
-    size(500, 500)
+    size(700, 700)
     playerTeam = 1
     enemyTeam = 2
     player = Player(width/2, height/2, playerTeam)
@@ -23,6 +24,7 @@ def setup():
     SpriteManager.spawn(RainDrop(350, 60, 2))
     SpriteManager.spawn(Enemy(100, 100, 2))
     SpriteManager.spawn(Enemy(200, 100, 2))
+    SpriteManager.spawn(ArmoredShooter(200, 200, 2))
     
                            
 def draw():
