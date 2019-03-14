@@ -24,7 +24,9 @@ def setup():
     SpriteManager.spawn(RainDrop(350, 60, 2))
     SpriteManager.spawn(Enemy(100, 100, 2))
     SpriteManager.spawn(Enemy(200, 100, 2))
-    SpriteManager.spawn(ArmoredShooter(200, 200, 2))
+    SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
+    SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
+
     
                            
 def draw():

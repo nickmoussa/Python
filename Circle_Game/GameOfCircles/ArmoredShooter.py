@@ -5,26 +5,19 @@ from Shooter import Shooter
 import SpriteManager
 
 class ArmoredShooter(Shooter, Sprite):
-    
-    speed = 4
-    diameter = 50
-    c = color(0,0,0)
-    ArmorThickness = 10
+    armor = 7
     
     def display(self):
-        fill(self.c)
-        stroke(0)
-        strokeWeight(self.ArmorThickness)
+        stroke(100)
+        strokeWeight(self.armor)
+        fill(255, 0, 0)
         ellipse(self.x, self.y, self.diameter, self.diameter)
         noStroke()
-    
-    def move(self):
-        Shooter.move(self)
-        self.x += self.speed
-        if self.x < 0 or self.x > width:
-            self.speed *= -1
-            
-    def ArmorSkin(self):
-        strokeWeight(50)
         
-               
+    def handleCollision(self):
+        self.armor -= 1
+        if self.armor < 0:
+            SpriteManager.destroy(self)    
+    
+
+        

@@ -1,7 +1,6 @@
 import SpriteManager
 from Bullet import Bullet
 from Sprite import Sprite
-
 class Player(Sprite):
     
     # instance variables
