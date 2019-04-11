@@ -9,6 +9,7 @@ from JiggleBot import JiggleBot
 from ScreenSaverBot import ScreenSaverBot
 from Bullet import Bullet
 from ArmoredShooter import ArmoredShooter
+from SlimeBot import SlimeBot
 
 def setup():
     print "Built with Processing Python version " + platform.python_version()
@@ -26,7 +27,7 @@ def setup():
     SpriteManager.spawn(Enemy(200, 100, 2))
     SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
     SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
-
+    SpriteManager.spawn(SlimeBot(252, 252, 2))
     
                            
 def draw():
