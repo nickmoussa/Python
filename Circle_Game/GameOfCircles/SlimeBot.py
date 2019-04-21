@@ -2,6 +2,7 @@ from Sprite import Sprite
 from Bullet import Bullet
 from Player import Player
 from Shooter import Shooter
+from SlimeBaby import SlimeBaby
 import SpriteManager
 
 class SlimeBot(Sprite):
@@ -24,4 +25,14 @@ class SlimeBot(Sprite):
         self.x += (2*sin(self.angle))
         
         self.y += self.yspeed
+    
+    def handleCollision(self):
         
+        SpriteManager.destroy(self)
+        for i in range(0,4):
+            pos = self.posRandomizer(self.x, self.y)
+            SpriteManager.spawn(SlimeBaby(pos.x, pos.y, 2))     
+
+    def posRandomizer(self, x, y):
+        t = 115
+        return PVector(x + random(-t,t), y + random(-t, t))

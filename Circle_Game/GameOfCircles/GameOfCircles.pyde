@@ -19,15 +19,9 @@ def setup():
     enemyTeam = 2
     player = Player(width/2, height/2, playerTeam)
     SpriteManager.setPlayer(player)
-    SpriteManager.spawn(JiggleBot(200, 50, 2))
-    SpriteManager.spawn(ScreenSaverBot(100, 50, 2))
-    SpriteManager.spawn(RainDrop(100, 60, 2))
-    SpriteManager.spawn(RainDrop(350, 60, 2))
-    SpriteManager.spawn(Enemy(100, 100, 2))
-    SpriteManager.spawn(Enemy(200, 100, 2))
-    SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
-    SpriteManager.spawn(ArmoredShooter(random(height), random(width), 2))
-    SpriteManager.spawn(SlimeBot(252, 252, 2))
+    SpriteManager.spawn(SlimeBot(100, 100, 2))
+    SpriteManager.spawn(SlimeBot(230, 230, 2))
+    SpriteManager.spawn(SlimeBot(580, 400, 2))
     
                            
 def draw():
